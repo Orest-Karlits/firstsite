@@ -1,0 +1,712 @@
+header {
+	height: 100vh;
+	background-image: url(2.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+header > div:first-child {
+	padding: 20px 0;
+}
+header nav > div {
+	display: inline-block;
+	padding: 15px;
+	position: relative;
+	/*border: 1px solid #fff; рамка*/
+}
+header nav > div > a { color: #fff; text-decoration: none; }
+header nav .submenu {
+	display: none;
+	position: absolute;
+	background: #fff;
+	top: 100%;
+	left: 15px;
+	min-width: 150px;
+	border-radius: 5px;
+   
+}
+header nav .submenu.sub-big{
+	width: 1000px;
+	left: -650px;
+	
+}
+
+
+header nav .submenu.sub-big div{
+	width: 24%;
+	display: inline-block;
+
+    
+	
+}
+header nav .submenu.sub-big div a i{
+	position: static;
+
+}
+
+
+
+
+header nav div:hover > .submenu { display: block; position: absolute;  }
+header nav .submenu div {
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+
+}
+header nav .submenu div .submenu {
+	left: 100%;
+	top: 0;
+
+
+}
+header nav .submenu div a { color: #555; text-decoration: none;  }
+header nav .submenu div a i {
+	position: absolute;
+	right: 10px;
+
+}
+header nav .submenu div:hover { background-color: #f7f7f9 }
+header h1,
+header h4,
+header div:last-child a {
+	color: #fff;
+	text-decoration: none;
+}
+header h4 {
+	margin: 15px 0 35px;
+}
+
+header #arrow-left,
+header #arrow-right {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+header #arrow-right {
+	left: auto;
+	right: 15px;	
+}
+
+.button1 {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+
+}
+.button1:hover {
+	background: #fff;
+	color: #000
+}
+
+.button2 {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid #0DFBF7;
+	border-radius: 30px;
+	background: #0DFBF7;
+
+}
+.button2:hover {
+	background: #fff;
+	color: #000;
+	border: #fff;
+}
+.logo img{
+	height: 40px;
+	margin-right: 5px;
+}
+.logo{
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.story{
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+	font-size: 23px;
+	user-select: none;
+  
+}
+.opusspacial{
+	display: flex;
+	justify-content: center;
+}
+.opusspacial p {
+	text-align: center;
+	font-size: 1.1em;
+	user-select: none;
+}
+
+.photo1{
+ margin-top: 90px;
+	width: 700px;
+	margin-left: 120px;
+}
+.photo1 img{
+	width: 100%;
+
+}
+.photo2{
+	margin-top: 50px;
+	width: 700px;
+	margin-left: 500px;
+}
+.photo2 img{
+	width: 100%;
+}
+.photo3{
+	margin-top: 50px;
+	width: 700px;
+	margin-left: 120px;
+}
+.photo3 img{
+	width: 100%;
+}
+
+
+
+
+.photo4{
+margin-top: 50px;
+background: url(3.jpg);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 400px;
+}
+.photo4 h4{
+	border: 2px solid #3FB2BF;
+	margin-top: 40px;
+	border-radius: 10px;
+	background: #3FB2BF;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 5px 20px 3px rgba(0,0,0,.5);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	padding: 20px 35px;
+	transition: all .3s;
+	font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.photo4 a{
+    text-decoration: none;
+    color: white;
+}
+.photo4 h2{
+	color: #fff;
+    font-size: 32px;
+    letter-spacing: .5px;
+
+}
+.photo4 h4:hover{
+	background: blue;
+	border: 2px solid blue;
+
+}
+.automatically p {
+	margin: 50px;
+	font-size: 18px;
+}
+
+section.photos1 {
+	height: 500px;
+}
+section.photos1 .small {
+	width: 30%;
+	height: 100%; 
+}
+section.photos1 .small img {
+	width: 100%;
+	height: calc(50% - 10px);
+}
+section.photos1 .big {
+	width: calc(70% - 20px);
+	height: 100%;
+}
+section.photos1 .big img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+section.photos2 {
+	height: 500px;
+}
+section.photos2 .nature1 {
+	width: 50%;
+	height: 100%; 
+}
+section.photos2 .nature1 img {
+	width: 100%;
+	height: 100%;
+}
+section.photos2 .nature2 {
+	width: calc(50% - 20px);
+	height: 100%;
+}
+section.photos2 .nature2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.photos2{
+	margin-top: 20px;
+}
+
+section.photos3 {
+	height: 500px;
+}
+
+section.photos3 .forext1 {
+	width: calc(70% - 10px);
+	height: 100%;
+}
+section.photos3 .forext1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+section.photos3 .forext2 {
+	width: 30%;
+	height: 100%; 
+	margin-top: -5px;
+}
+section.photos3 .forext2 img {
+	width: 100%;
+	height: calc(50% - 10px);
+	margin-top: 8px;
+}
+.photos3{
+	margin-top: 20px;
+}
+
+section.photos4 {
+	height: 500px;
+}
+
+
+section.photos4 .river {
+	width: 100%;
+	height: 100%;
+}
+section.photos4 .river img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.river{
+	margin-top: 20px;
+}
+
+footer{
+	margin-top: 250px;
+}
+
+footer {
+	background: #343746;
+	padding: 50px;
+}
+footer form {
+	background: #fff;
+    position: relative;
+    width: 590px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 40px 70px;
+}
+footer form * { display: block; width: 100%; }
+footer form h4 { font-size: 28px; font-weight: 500; margin-bottom: 20px; }
+footer form label {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 10px 0;
+	font-family: arial
+}
+footer form input,
+footer form textarea
+{
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+     margin-bottom: 20px;
+}
+footer form textarea { height: 120px; }
+footer form input[type=submit]
+{
+    background: linear-gradient(#2083fe,#1d7bf0);
+    border: 0;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    width: auto;
+    margin: auto;
+    box-shadow: rgba(23,43,99,.24) 0 7px 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 12px 23px;
+    text-shadow: 1px 1px rgba(0,0,0,.09);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+footer .social {
+	justify-content: center;
+	margin-top: 30px;
+}
+footer .social a {margin: 25px;}
+footer .social a i {font-size: 35px;color: #fff;}
+
+footer a:hover{
+	transform: scale(4);
+}
+	
+}
+section.photos1 img {
+	transition: all 1s;
+}
+section.photos1 img:hover {
+	transform: rotateY(180deg) scale(1.1);
+	
+}
+
+
+section.photos2 img {
+	transition: all 3s;
+}
+section.photos2 img:hover {
+	transform: perspective(900px) rotate3d(180,-45,0,-360deg) scale(1.2);
+}
+
+section.photos3 img {
+	transition: all 3s;
+}
+section.photos3 img:hover {
+ transform: rotate3d(1, 1, 2, 360deg);
+}
+
+
+section.photos4 img {
+	transition: all 3s;
+}
+section.photos4 img:hover {
+ transform: scaleY(1.3);
+}
+
+
+.automatically p:hover {
+	transform: scale(1.3);
+}
+
+.opusspacial p:hover {
+	transform: scale(1.3);
+}
+
+.photo1 img{
+	transition: all 3s;
+}
+.photo1 img:hover{
+	transform:  scale(1.3);
+}
+
+.photo2 img{
+	transition: all 3s;
+}
+.photo2 img:hover{
+	transform: rotateY(180deg);
+}
+.photo3 img{
+	transition: all 3s;
+}
+.photo3 img:hover{
+	transform: scaleY(1.3);
+	}
+
+	header #arrow-left, header #arrow-right { display: none; }
+input {
+	opacity: 0;
+}
+footer input {
+	opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+	header { background-size: auto 100%; }
+	header nav {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(0,0,0,0.9);
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: all 1s;
+	
+}
+	header nav .submenu{
+		display: none;
+	
+	}
+
+	.opusspacial{
+		    width: 80%;
+		   margin-left: 55px;
+		   font-size: 1.7em;
+	}
+	.automatically p{
+		font-size: 1.9em;
+		width: 80%;
+		 margin-left: 55px;
+	}
+
+	.photo1{
+		    width: 95%;
+		    margin-left: 5px;
+		    margin-top: 50px;
+	}
+
+	.photo2{
+		    width: 95%;
+		    margin-left: 5px;
+		    margin-top: 15px;
+	}
+	.photo3{
+		    width: 95%;
+		    margin-left: 5px;
+		     margin-top: 15px;
+	}
+	.photo4 h2{
+		margin-left: 30px;
+	}
+	
+
+  	footer form{
+		width: 100%;
+    padding: 20px;
+	}
+
+	footer .social a {margin: 25px auto;}
+footer .social a i {
+margin-left: -17px;}
+
+
+
+
+header nav div:hover > .submenu {
+	display: flex;
+	flex-direction: column;
+
+}
+header nav .submenu.sub-big {
+	width: 150px;
+	left: 0;
+}
+section.photos1 .small,
+	section.photos1 .big
+	{ width: 100%; }
+	section.photos1 { height: auto; flex-wrap: wrap; }
+	section.photos1 img { margin-top: 10px; }
+
+	section.photos2 .nature1,
+	section.photos2 .nature2
+	{ width: 100%; }
+	section.photos2 { height: auto; flex-wrap: wrap; margin-top: 5px; }
+	section.photos2 img { margin-top: 10px; }
+
+		section.photos3 .forext1,
+	section.photos3 .forext2
+	{ width: 100%; }
+	section.photos3 { height: auto; flex-wrap: wrap; margin-top: 5px; }
+	section.photos3 img { margin-top: 10px; }
+   
+   
+	
+	section.photos4 .river
+	{ width: 100%; }
+	section.photos4 { height: auto;  }
+	section.photos4 img { margin-top: 5px;
+	 }
+	 .photo3 img:hover{
+	transform: scaleY(1);
+	}
+	.photo2 img:hover{
+	transform: rotateY(0deg);
+}
+ .photo1 img:hover{
+	transform: scaleY(1);
+	}
+	section.photos1 img:hover {
+	transform: rotateY(0deg) scale(1);
+}
+section.photos2 img:hover {
+	transform: perspective(0px) rotate3d(0,0,0,0deg) scale(1);
+}
+section.photos3 img:hover {
+ transform: rotate3d(0, 0, 0, 0deg);
+}
+section.photos4 img:hover {
+ transform: scaleY(1);
+}
+.automatically p:hover {
+	transform: scale(1);
+	
+}
+.opusspacial p:hover {
+	transform: scale(1);
+}
+
+
+
+.dropdown {
+    position: relative; /* Относительное позиционирование */
+   }
+   .dropdown .submenu { display: none; /* Прячем */ }
+   .dropdown label {
+    cursor: pointer; /* Вид курсора */
+    
+   }
+   .dropdown .submenu {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 1.3em; /* Положение меню */
+    margin: 0; padding: 5px; /* Убираем отступы и поля */
+    list-style: none; /* Убираем маркеры списка */
+    background: #fff; /* Цвет фона */
+    left: 50px;
+    top: 50px;
+    z-index: 25;
+   }
+    input {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    opacity:0;
+    z-index: 20;
+    margin: 10px;
+   }
+   .dropdown a { color: #fff; /* Цвет ссылок */ }
+   #menu:checked + nav {
+    display: flex; /* Показываем меню */
+   }
+    #menu-1:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+ 
+    #menu-2:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+   #menu-3:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+   #menu-4:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+
+  #menu-5:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+   #menu-12:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   }
+   #menu-13:checked + .submenu {
+    display: inline-block; /* Показываем меню */
+   } 
+   #menu-14:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   }  
+   #menu-15:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   }  
+   #menu-21:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   }
+     #menu-22:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   }
+     #menu-23:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   } 
+      #menu-24:checked + .submenu {
+    display: inline-block;  /* Показываем меню */
+   }
+   footer input {
+   	position: unset;
+   }
+   .fas.fa-bars{
+   	font-size: 30px;
+   }
+  }
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+	.opusspacial{
+		    width: 80%;
+		   margin-left: 55px;
+		   font-size: 1.2em;
+	}
+	.automatically p{
+		font-size: 1.2em;
+		width: 80%;
+		 margin-left: 55px;
+	}
+}
+
+
+
+	
+
+
+
+
+
+@media screen and (max-width: 375px) {
+	header { background-size: auto 100%; }
+	footer .social {
+	justify-content: center;
+	margin-top: 30px;
+}
+footer .social a {margin: 25px auto;}
+footer .social a i {font-size: 35px;color: #fff;
+	margin-left: 0px;
+}
+
+	}
+
+
+
